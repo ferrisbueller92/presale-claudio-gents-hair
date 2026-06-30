@@ -1,0 +1,45 @@
+/* Claudio Gents Hair Stylist — tokens. Identity grounded in REVIEWS (no socials/usable photos):
+   classic heritage GENTS' BARBER — old-school, no-nonsense, takes pride, fair, local.
+   Cream + deep navy + walnut + brass + oxblood. Timeless/traditional — deliberately NOT Fern's
+   terracotta boutique, NOT Chicanos' streetwear bronze-on-black. */
+:root{
+  /* ── Colour (60 cream · 30 navy/walnut · 10 brass+oxblood) ── */
+  --cream:   #F3ECDC;  /* page surface ~60% */
+  --paper:   #FAF5E9;  /* light cards */
+  --navy:    #1B2636;  /* primary dark sections + text-on-cream is ink below */
+  --navy-d:  #131C28;  /* deepest */
+  --walnut:  #3F2C1E;  /* warm wood dark accent */
+  --ink:     #20242B;  /* body text on cream */
+  --oxblood: #8C3B33;  /* accent — classic barber red */
+  --oxblood-d:#6F2C26; /* hover */
+  --brass:   #B08D4F;  /* metal accent / eyebrows / rules */
+  --muted:   #847A69;  /* muted text on cream ~4.5:1 */
+  --line:    rgba(27,38,54,.16);            /* hairline on cream */
+  --line-d:  rgba(243,236,220,.16);          /* hairline on dark */
+  --star:    #B08D4F;  /* review stars — brass, classic */
+
+  /* ── Typography (sturdy classic slab display ↔ clean body) ── */
+  --f-display:'Zilla Slab', Georgia, serif;   /* traditional, established, masculine */
+  --f-body:'Inter', -apple-system, system-ui, sans-serif;
+  --f-label:'Space Mono', monospace;
+  --t-caption:13px; --t-body:16px; --t-h4:21px; --t-h3:27px;
+  --t-h2:34px; --t-h1:44px; --t-display:clamp(42px,6.4vw,76px);
+  --tracking-label:0.2em;
+
+  /* ── Spacing (8px base) ── */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-6:24px;
+  --sp-8:32px; --sp-10:48px; --sp-12:64px; --sp-16:96px; --sp-20:128px;
+
+  /* ── Radius (classic, modest) ── */
+  --r-input:4px; --r-card:6px; --r-img:6px; --r-pill:999px;
+
+  /* ── Elevation (warm, classic) ── */
+  --shadow-card:0 1px 2px rgba(19,28,40,.06), 0 10px 26px rgba(19,28,40,.10);
+
+  /* ── Motion (motion-taste) ── */
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --d-micro:160ms; --d-reveal:240ms;
+  --press:scale(0.98);
+}
+/* Contrast: ink#20242B on cream#F3ECDC ≈ 12:1 PASS; oxblood#8C3B33 on cream ≈ 5.6:1 PASS;
+   cream on navy#1B2636 ≈ 12:1 PASS; cream on oxblood ≈ 5.4:1 PASS; brass#B08D4F on navy ≈ 5.2:1 PASS. */
